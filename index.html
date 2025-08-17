@@ -69,7 +69,6 @@
 
   button:hover {
     color: black;
-    /* neon yellow-green */
     box-shadow: 0 0 5px black,
       0 0 10px black,
       0 0 20px black,
@@ -201,15 +200,12 @@
       const userImg = document.getElementById('userChoice');
       const compImg = document.getElementById('computerChoice');
 
-      // Add shake
       userImg.classList.add('shaking');
       compImg.classList.add('shaking');
 
-      // Set default hand during shake
       userImg.src = 'images/rock.png';
       compImg.src = 'images/rock.png';
 
-      // After 1 second, show final choices
       setTimeout(() => {
         userImg.classList.remove('shaking');
         compImg.classList.remove('shaking');
